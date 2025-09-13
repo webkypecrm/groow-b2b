@@ -1,0 +1,169 @@
+#main-footer {
+  background-color: #f8f9fa;
+  padding: 40px 0 20px;
+  border-top: 1px solid #e9ecef;
+  font-family: Arial, sans-serif;
+}
+
+#footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#footer-categories {
+  margin-bottom: 30px;
+}
+
+.footer-category-column {
+  margin-bottom: 25px;
+}
+
+.footer-category-column h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-category-column .category-icon {
+  margin-right: 8px;
+  color: #666;
+  font-size: 16px;
+}
+
+.footer-category-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-category-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-category-column ul li a {
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer-category-column ul li a:hover {
+  color: #007bff;
+}
+
+#footer-brands {
+  border-top: 1px solid #e9ecef;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#footer-brands-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#footer-brands-list a {
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+#footer-brands-list a:hover {
+  color: #007bff;
+}
+
+#footer-bottom {
+  border-top: 1px solid #e9ecef;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#footer-copyright {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#footer-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+#footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+#footer-links a:hover {
+  color: #007bff;
+}
+
+#footer-social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#footer-social a {
+  color: #666;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+#footer-social a:hover {
+  color: #007bff;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  #footer-categories .col-md-2 {
+    margin-bottom: 20px;
+  }
+
+  #footer-brands-list {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  #footer-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #main-footer {
+    padding: 30px 15px 15px;
+  }
+
+  .footer-category-column h6 {
+    font-size: 13px;
+  }
+
+  .footer-category-column ul li a {
+    font-size: 12px;
+  }
+
+  #footer-brands-list a {
+    font-size: 12px;
+  }
+}
