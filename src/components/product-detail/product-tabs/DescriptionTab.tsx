@@ -1,11 +1,11 @@
 const DescriptionTab = () => {
   return (
     <div className="ps-document">
-      <h5>Embodying the Raw, Wayward Spirit of Rock 'N' Roll</h5>
+      <h5>Embodying the Raw, Wayward Spirit of Rock &apos;N&apos; Roll</h5>
       <p>
-        Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable
-        active stereo speaker takes the unmistakable look and sound of Marshall,
-        unplugs the chords, and takes the show on the road.
+        Embodying the raw, wayward spirit of rock &apos;n&apos; roll, the
+        Kilburn portable active stereo speaker takes the unmistakable look and
+        sound of Marshall, unplugs the chords, and takes the show on the road.
       </p>
       <p>
         Weighing in under 7 pounds, the Kilburn is a lightweight piece of
