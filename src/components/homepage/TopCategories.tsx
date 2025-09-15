@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import CategoriesCard from "../ui/CategoriesCard";
 
 const categories = [
   { img: "/images/product-1.webp", title: "Electronics", href: "#" },
@@ -18,23 +17,8 @@ export default function TopCategories() {
       <div className="ps-container">
         <h3>Top categories of the month</h3>
         <div className="row">
-          {categories.map((category, index) => (
-            <div
-              key={index}
-              className="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6"
-            >
-              <div className="ps-block--category">
-                <Link href={category.href} className="ps-block__overlay" />
-                <Image
-                  src={category.img}
-                  alt={category.title}
-                  width={300}
-                  height={300}
-                  className="img-fluid"
-                />
-                <p>{category.title}</p>
-              </div>
-            </div>
+          {categories.map((category) => (
+            <CategoriesCard key={category.title} category={category} />
           ))}
         </div>
       </div>

@@ -31760,6 +31760,7 @@ backgr .ps-vendor-banner:before {
 
 .ps-page--product {
   padding-top: 30px;
+  background-color: #fff;
 }
 
 .ps-page--product .ps-page__container {
@@ -39082,7 +39083,7 @@ a {
   z-index: 1200 !important; /* higher than header */
   background-color: #fff; /* ensure overlay is white */
   width: 80%;
-  max-width: 350px;
+  /* max-width: 350px; */
   overflow-y: auto; /* allow scrolling */
 }
 .offcanvas-header {

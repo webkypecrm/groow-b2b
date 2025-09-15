@@ -15,6 +15,7 @@ import ProductList from "@/components/homepage/ProductList";
 import HomeAds2 from "@/components/homepage/HomeAds2";
 import DownloadApp from "@/components/homepage/DownloadApp";
 import NewArrival from "@/components/homepage/NewArrival";
+import InfoStrip from "@/components/layout/InfoStrip";
 
 function HomePage() {
   return (
@@ -47,6 +48,7 @@ function HomePage() {
         <NewArrival />
         {/* Mobile Navigation */}
       </main>
+      <InfoStrip />
       <Footer />
     </>
   );

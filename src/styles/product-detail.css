@@ -1,0 +1,207 @@
+#alibaba-inquiry-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.offcanvas-title {
+  padding: 10px 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.offcanvas-header {
+  background: #fff !important;
+  padding: 0px !important;
+  border-bottom: 1px solid #e8e8e8;
+}
+#alibaba-inquiry-wrapper .inquiry-modal {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /*max-width: 500px;*/
+  width: 100%;
+  position: relative;
+}
+/*#alibaba-inquiry-wrapper .inquiry-header {*/
+/*    padding: 20px 24px 16px;*/
+/*    border-bottom: 1px solid #e8e8e8;*/
+/*    position: relative;*/
+/*}*/
+/*#alibaba-inquiry-wrapper .close-btn:hover {*/
+/*    color: #333;*/
+/*}*/
+#alibaba-inquiry-wrapper .inquiry-body {
+  padding: 20px 24px;
+}
+#alibaba-inquiry-wrapper .supplier-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+#alibaba-inquiry-wrapper .supplier-avatar {
+  width: 32px;
+  height: 32px;
+  background: #ff6600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  margin-right: 8px;
+}
+#alibaba-inquiry-wrapper .supplier-name {
+  font-weight: 600;
+  color: #333;
+  margin-right: 8px;
+  font-size: 14px;
+}
+/*#alibaba-inquiry-wrapper .verified-badge {*/
+/*    background: #ff6600;*/
+/*    color: white;*/
+/*    padding: 2px 6px;*/
+/*    border-radius: 3px;*/
+/*    font-size: 11px;*/
+/*    font-weight: 500;*/
+/*}*/
+#alibaba-inquiry-wrapper .product-preview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+}
+#alibaba-inquiry-wrapper .product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+#alibaba-inquiry-wrapper .product-details h6 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+#alibaba-inquiry-wrapper .quantity-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+#alibaba-inquiry-wrapper .quantity-label {
+  font-size: 14px;
+  color: #666;
+}
+#alibaba-inquiry-wrapper .quantity-input {
+  /*width: 80px;*/
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+#alibaba-inquiry-wrapper .unit-select {
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  margin-left: 8px;
+}
+#alibaba-inquiry-wrapper .inquiry-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 16px;
+}
+#alibaba-inquiry-wrapper .inquiry-textarea:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.1);
+}
+#alibaba-inquiry-wrapper .smart-assistant {
+  margin-bottom: 16px;
+}
+#alibaba-inquiry-wrapper .assistant-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+#alibaba-inquiry-wrapper .assistant-icon {
+  width: 16px;
+  height: 16px;
+  background: #4285f4;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+#alibaba-inquiry-wrapper .suggestion-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+#alibaba-inquiry-wrapper .suggestion-btn {
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#alibaba-inquiry-wrapper .suggestion-btn:hover {
+  background: #e9ecef;
+  border-color: #ddd;
+}
+#alibaba-inquiry-wrapper .custom-topic-btn {
+  background: none;
+  border: 1px dashed #ddd;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#alibaba-inquiry-wrapper .attachment-section {
+  margin-bottom: 20px;
+}
+#alibaba-inquiry-wrapper .attachment-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#alibaba-inquiry-wrapper .attachment-btn i {
+  margin-right: 6px;
+}
+#alibaba-inquiry-wrapper .send-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+#alibaba-inquiry-wrapper .send-btn:hover {
+  background: #e55a00;
+}

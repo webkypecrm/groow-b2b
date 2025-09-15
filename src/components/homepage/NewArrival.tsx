@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import NewArrivalsProductCard from "../ui/NewArrivalsProductCard";
 
 const products = [
   {
@@ -85,47 +85,7 @@ const NewArrival = () => {
                 key={product.id}
                 className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4"
               >
-                <div className="ps-product--horizontal d-flex">
-                  {/* Thumbnail */}
-                  <div className="ps-product__thumbnail me-3 flex-shrink-0">
-                    <Link href={product.link} aria-label={product.title}>
-                      <Image
-                        src={product.img}
-                        alt={product.title}
-                        width={120}
-                        height={120}
-                        className="img-fluid rounded"
-                        style={{ width: "100%", height: "auto" }}
-                      />
-                    </Link>
-                  </div>
-
-                  {/* Content */}
-                  {/* Content */}
-                  <div className="ps-product__content flex-grow-1">
-                    <Link
-                      className="ps-product__title d-block mb-2"
-                      href={product.link}
-                    >
-                      {product.title}
-                    </Link>
-                    <div
-                      className="ps-product__rating mb-0 mt-0"
-                      aria-label="Product rating"
-                    >
-                      <span className="ps-rating text-warning">
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star-o" />
-                      </span>
-                    </div>
-                    <p className="ps-product__price fw-bold mb-0">
-                      ${product.price.toFixed(2)}
-                    </p>
-                  </div>
-                </div>
+                <NewArrivalsProductCard product={product} />
               </div>
             ))}
           </div>
