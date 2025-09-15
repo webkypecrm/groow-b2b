@@ -470,7 +470,7 @@ const Header: React.FC = () => {
             <div className="navigation__right">
               <ul className="menu">
                 <li className="menu-list">
-                  <Link href="/products">Products</Link>
+                  <Link href="/product-detail-page">Products</Link>
                 </li>
                 <li className="menu-list">
                   <Link href="/services">Services</Link>
