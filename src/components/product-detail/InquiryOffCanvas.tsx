@@ -133,4 +133,6 @@ const InquiryOffcanvas = forwardRef<HTMLDivElement, InquiryOffcanvasProps>(
   }
 );
 
+InquiryOffcanvas.displayName = "InquiryOffcanvas";
+
 export default InquiryOffcanvas;
