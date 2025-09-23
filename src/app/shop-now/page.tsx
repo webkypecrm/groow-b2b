@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import Footer from "@/components/layout/Footer";
 import InfoStrip from "@/components/layout/InfoStrip";
@@ -10,10 +10,6 @@ import PageRightSidebar from "@/components/product-detail/PageRightSidebar";
 import Breadcrumb from "@/components/layout/BreadCrumb";
 import BlueHeader from "@/components/layout/BlueHeader";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
 import SliderSection from "@/components/shopnow/SliderSection";
 import BrandBannerSection from "@/components/shopnow/BrandBannerSection";
 import CategoriesBasedItemThree from "@/components/shopnow/CategoriesBasedItemThree";
