@@ -24,7 +24,8 @@ function page() {
           <div className="ps-vendor-banner">
             <div className="container">
               <h2>
-                Millions Of Shoppers Can’t Wait To See What You Have In Store
+                Millions Of Shoppers Can&apos;t Wait To See What You Have In
+                Store
               </h2>
               <a className="ps-btn ps-btn--lg" href="store-list.html">
                 Start Selling
@@ -52,8 +53,9 @@ function page() {
                       <h4>Low Fees</h4>
                       <div className="ps-block__desc" data-mh="about-desc">
                         <p>
-                          It doesn’t take much to list your items and once you
-                          make a sale, Martfury’s transaction fee is just 2.5%.
+                          It doesn&apos;t take much to list your items and once
+                          you make a sale, Martfury’s transaction fee is just
+                          2.5%.
                         </p>
                       </div>
                       <a href="#">Learn more</a>
@@ -206,9 +208,9 @@ function page() {
             </div>
             <div className="ps-section__content">
               <h5>
-                It doesn’t cost a thing to list up to 50 items a month, and you
-                only pay after your stuff sells. It’s just a small percent of
-                the money you earn
+                It doesn&apos;t cost a thing to list up to 50 items a month, and
+                you only pay after your stuff sells. It&apos;s just a small
+                percent of the money you earn
               </h5>
               <div className="ps-section__numbers">
                 <figure>
@@ -376,12 +378,12 @@ function page() {
                       What do I need to do to create a shop?
                     </figcaption>
                     <p>
-                      It’s easy to set up a shop on Martfury. Create an Martfury
-                      account (if you don’t already have one), set your shop
-                      location and currency, choose a shop name, create a
-                      listing, set a payment method (how you want to be paid),
-                      and finally set a billing method (how you want to pay your
-                      Martfuryfees).
+                      It&apos;s easy to set up a shop on Martfury. Create an
+                      Martfury account (if you don&apos;t already have one), set
+                      your shop location and currency, choose a shop name,
+                      create a listing, set a payment method (how you want to be
+                      paid), and finally set a billing method (how you want to
+                      pay your Martfuryfees).
                     </p>
                   </figure>
                 </div>
@@ -449,7 +451,8 @@ function page() {
           <div className="ps-vendor-banner">
             <div className="container">
               <h2>
-                Millions Of Shoppers Can’t Wait To See What You Have In Store
+                Millions Of Shoppers Can&apos;t Wait To See What You Have In
+                Store
               </h2>
               <a className="ps-btn ps-btn--lg" href="store-list.html">
                 Start Selling
