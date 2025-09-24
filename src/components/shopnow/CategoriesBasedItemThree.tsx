@@ -133,10 +133,10 @@ const CategoriesBasedItemThree = () => {
                   <a href="/shop">Gemstones Jewelry</a>
                 </li>
                 <li>
-                  <a href="/shop">Men's Watches</a>
+                  <a href="/shop">Men Watches</a>
                 </li>
                 <li>
-                  <a href="/shop">Women's Watches</a>
+                  <a href="/shop">Women Watches</a>
                 </li>
               </ul>
             </div>
