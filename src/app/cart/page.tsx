@@ -1,5 +1,7 @@
 import BlueHeader from "@/components/layout/BlueHeader";
 import Breadcrumb from "@/components/layout/BreadCrumb";
+import Footer from "@/components/layout/Footer";
+import InfoStrip from "@/components/layout/InfoStrip";
 import React from "react";
 
 function page() {
@@ -138,6 +140,9 @@ function page() {
           </section>
         </div>
       </div>
+      
+      <InfoStrip />
+      <Footer />
     </>
   );
 }
