@@ -2,6 +2,7 @@ import BlueHeader from "@/components/layout/BlueHeader";
 import Breadcrumb from "@/components/layout/BreadCrumb";
 import Footer from "@/components/layout/Footer";
 import InfoStrip from "@/components/layout/InfoStrip";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -40,12 +41,12 @@ function page() {
                           <td>
                             <div className="ps-product--cart">
                               <div className="ps-product__thumbnail">
-                                <a href="/product/68">
+                                <Link href="/product/68">
                                   <img
                                     src="https://placehold.co/400x400"
                                     alt=""
                                   />
-                                </a>
+                                </Link>
                               </div>
                               <div className="ps-product__content">
                                 Apple iPhone 7 Plus 128 GB – Red Color
@@ -61,8 +62,8 @@ function page() {
                               <button className="down">-</button>
                               <input
                                 className="form-control"
-                                placeholder={1}
-                                disabled=""
+                                // placeholder={1}
+                                // disabled=""
                                 type="text"
                               />
                             </div>
@@ -71,17 +72,17 @@ function page() {
                             <strong>$90.99</strong>
                           </td>
                           <td>
-                            <a href="#">
+                            <Link href="#">
                               <i className="icon-cross" />
-                            </a>
+                            </Link>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                     <div className="ps-section__cart-actions">
-                      <a className="ps-btn" href="/shop">
+                      <Link className="ps-btn" href="/shop">
                         Back to Shop
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="row">
@@ -115,11 +116,14 @@ function page() {
                       <ul className="ps-block__product">
                         <li>
                           <span className="ps-block__estimate">
-                            <a className="ps-product__title" href="/product/68">
+                            <Link
+                              className="ps-product__title"
+                              href="/product/68"
+                            >
                               Apple iPhone 7 Plus 128 GB – Red Color
                               <br />
                               x1
-                            </a>
+                            </Link>
                           </span>
                         </li>
                       </ul>
@@ -128,19 +132,19 @@ function page() {
                       </h3>
                     </div>
                   </div>
-                  <a
+                  <Link
                     className="ps-btn ps-btn--fullwidth"
                     href="/account/checkout"
                   >
                     Proceed to checkout
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </section>
         </div>
       </div>
-      
+
       <InfoStrip />
       <Footer />
     </>
