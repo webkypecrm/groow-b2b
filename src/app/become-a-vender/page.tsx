@@ -222,7 +222,7 @@ function page() {
               </div>
               <div className="ps-section__desc">
                 <figure>
-                  <figcaption>Here's what you get for your fee:</figcaption>
+                  <figcaption>Here what you get for your fee:</figcaption>
                   <ul>
                     <li>
                       A worldwide community of more than 160 million shoppers.
