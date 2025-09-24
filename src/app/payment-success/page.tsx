@@ -2,6 +2,7 @@ import BlueHeader from "@/components/layout/BlueHeader";
 import Breadcrumb from "@/components/layout/BreadCrumb";
 import Footer from "@/components/layout/Footer";
 import InfoStrip from "@/components/layout/InfoStrip";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -35,19 +36,19 @@ function page() {
                       An email will be sent containing information about your
                       purchase. If you have any questions about your purchase,
                       email us at{" "}
-                      <a
+                      <Link
                         href="mailto@contact@martfury.com"
                         className="ps-highlight"
                       >
                         <strong>contact@martfury.com</strong>
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div className="ps-block__bottom">
-                    <a className="ps-btn" href="/">
+                    <Link className="ps-btn" href="/">
                       <i className="icon-arrow-left mr-2" />
                       Back to shop
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -62,13 +63,13 @@ function page() {
                         </figcaption>
                       </figure>
                       <figure className="ps-block__items fs-16">
-                        <a href="/">
+                        <Link href="/">
                           <strong>
                             Apple iPhone 7 Plus 128 GB – Red Color
                             <span>x1</span>
                           </strong>
                           <small>$90.99</small>
-                        </a>
+                        </Link>
                       </figure>
                       <figure>
                         <figcaption>

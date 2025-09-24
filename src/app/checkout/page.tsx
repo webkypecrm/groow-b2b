@@ -2,6 +2,7 @@ import BlueHeader from "@/components/layout/BlueHeader";
 import Breadcrumb from "@/components/layout/BreadCrumb";
 import Footer from "@/components/layout/Footer";
 import InfoStrip from "@/components/layout/InfoStrip";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -200,10 +201,10 @@ function page() {
                         </div>
                       </div>
                       <div className="ps-form__submit">
-                        <a href="cart.html" className="fs-14">
+                        <Link href="cart.html" className="fs-14">
                           <i className="icon-arrow-left mr-2" /> Return to
                           shopping cart
-                        </a>
+                        </Link>
                         <div className="ps-block__footer">
                           <button className="ps-btn">
                             Continue to shipping
@@ -224,13 +225,13 @@ function page() {
                             </figcaption>
                           </figure>
                           <figure className="ps-block__items">
-                            <a href="/" className="fs-16">
+                            <Link href="/" className="fs-16">
                               <strong>
                                 Apple iPhone 7 Plus 128 GB – Red Color
                                 <span>x1</span>
                               </strong>
                               <small>$90.99</small>
-                            </a>
+                            </Link>
                           </figure>
                           <figure>
                             <figcaption>
