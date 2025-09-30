@@ -134,7 +134,7 @@ function page() {
                   </div>
                   <Link
                     className="ps-btn ps-btn--fullwidth"
-                    href="/account/checkout"
+                    href="/checkout"
                   >
                     Proceed to checkout
                   </Link>

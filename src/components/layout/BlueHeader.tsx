@@ -486,7 +486,7 @@ const BlueHeader: React.FC = () => {
 
               <ul className="navigation__extra new-nwigation-for-extra">
                 <li>
-                  <Link href="/become-vendor">Join as a supplier</Link>
+                  <Link href="/become-a-vender">Join as a supplier</Link>
                 </li>
                 <li>
                   <Link href="/start-listing">Start a listing</Link>
