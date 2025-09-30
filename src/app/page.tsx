@@ -16,6 +16,8 @@ import HomeAds2 from "@/components/homepage/HomeAds2";
 import DownloadApp from "@/components/homepage/DownloadApp";
 import NewArrival from "@/components/homepage/NewArrival";
 import InfoStrip from "@/components/layout/InfoStrip";
+import ClothingList from "@/components/homepage/ClothingList";
+import KitchenAndGarden from "@/components/homepage/KitchenAndGarden";
 
 function HomePage() {
   return (
@@ -37,9 +39,10 @@ function HomePage() {
         {/* product list */}
         <ProductList />
         {/* product list */}
-        <ProductList />
+        {/* <ProductList /> */}
+        <ClothingList />
         {/* product list */}
-        <ProductList />
+        <KitchenAndGarden />
         {/* Home-add2 */}
         <HomeAds2 />
         {/* Download APP */}
