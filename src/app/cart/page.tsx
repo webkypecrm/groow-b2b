@@ -80,7 +80,7 @@ function page() {
                       </tbody>
                     </table>
                     <div className="ps-section__cart-actions">
-                      <Link className="ps-btn" href="/shop">
+                      <Link className="ps-btn" href="/shop-now">
                         Back to Shop
                       </Link>
                     </div>

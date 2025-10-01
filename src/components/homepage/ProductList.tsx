@@ -305,7 +305,7 @@ export default function ConsumerElectronics() {
         {/* Header */}
         <div className="ps-section__header">
           <h3>Consumer Electronics</h3>
-          <ul className="ps-section__links">
+          <ul className="ps-section__links" >
             <li>
               <Link href="#">New arrivals</Link>
             </li>

@@ -6,7 +6,12 @@ function HeroSection() {
   return (
     <section
       className="text-center position-relative"
-      style={{ zIndex: -1 }}
+      
+      style={{
+  zIndex: -1,
+  overflowX: "hidden",
+}}
+
       aria-label="Hero Section"
     >
       {/* Background Banner */}
@@ -21,7 +26,7 @@ function HeroSection() {
       />
 
       {/* Overlay Content */}
-      <div className="container new-position-conatiner position-absolute top-50 start-50 translate-middle px-3">
+      <div className="container new-position-conatiner position-absolute top-50 start-50 translate-middle px-sm-3 px-0">
         <div className="row justify-content-center">
           <div className="col-lg-10 col-md-11 col-12">
             <div className="banner-overlay text-center">

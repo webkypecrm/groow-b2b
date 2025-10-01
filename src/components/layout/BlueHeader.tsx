@@ -519,18 +519,18 @@ const BlueHeader: React.FC = () => {
                   onClick={toggleDepartmentMenuSticky}
                 >
                   <i className="icon-menu"></i>
-                  <span>Shop by Department</span>
+                  {/* <span>Shop by Department</span> */}
                 </div>
                 {isDepartmentMenuOpenSticky && (
                   <div className="menu__content">
                     <ul className="menu--dropdown new-menu-dropdown">
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-star"></i>Hot Promotions
                         </Link>
                       </li>
                       <li className="menu-item-has-children has-mega-menu">
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-laundry"></i>Consumer Electronic
                         </Link>
                         <div className="mega-menu">
@@ -538,32 +538,32 @@ const BlueHeader: React.FC = () => {
                             <h4>Electronic</h4>
                             <ul className="mega-menu__list">
                               <li>
-                                <Link href="/shop">Home Audio & Theathers</Link>
+                                <Link href="/shop-now">Home Audio & Theathers</Link>
                               </li>
                               <li>
-                                <Link href="/shop">TV & Videos</Link>
+                                <Link href="/shop-now">TV & Videos</Link>
                               </li>
                               <li>
-                                <Link href="/shop">
+                                <Link href="/shop-now">
                                   Camera, Photos & Videos
                                 </Link>
                               </li>
                               <li>
-                                <Link href="/shop">
+                                <Link href="/shop-now">
                                   Cellphones & Accessories
                                 </Link>
                               </li>
                               <li>
-                                <Link href="/shop">Headphones</Link>
+                                <Link href="/shop-now">Headphones</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Videosgames</Link>
+                                <Link href="/shop-now">Videosgames</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Wireless Speakers</Link>
+                                <Link href="/shop-now">Wireless Speakers</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Office Electronic</Link>
+                                <Link href="/shop-now">Office Electronic</Link>
                               </li>
                             </ul>
                           </div>
@@ -571,41 +571,41 @@ const BlueHeader: React.FC = () => {
                             <h4>Accessories & Parts</h4>
                             <ul className="mega-menu__list">
                               <li>
-                                <Link href="/shop">Digital Cables</Link>
+                                <Link href="/shop-now">Digital Cables</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Audio & Video Cables</Link>
+                                <Link href="/shop-now">Audio & Video Cables</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Batteries</Link>
+                                <Link href="/shop-now">Batteries</Link>
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-shirt"></i>Clothing & Apparel
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-lampshade"></i>Home, Garden &
                           Kitchen
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-heart-pulse"></i>Health & Beauty
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-diamond2"></i>Yewelry & Watches
                         </Link>
                       </li>
                       <li className="menu-item-has-children has-mega-menu">
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-desktop"></i>Computer & Technology
                         </Link>
                         <div className="mega-menu">
@@ -613,69 +613,69 @@ const BlueHeader: React.FC = () => {
                             <h4>Computer & Technologies</h4>
                             <ul className="mega-menu__list">
                               <li>
-                                <Link href="/shop">Computer & Tablets</Link>
+                                <Link href="/shop-now">Computer & Tablets</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Laptop</Link>
+                                <Link href="/shop-now">Laptop</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Monitors</Link>
+                                <Link href="/shop-now">Monitors</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Networking</Link>
+                                <Link href="/shop-now">Networking</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Drive & Storages</Link>
+                                <Link href="/shop-now">Drive & Storages</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Computer Components</Link>
+                                <Link href="/shop-now">Computer Components</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Security & Protection</Link>
+                                <Link href="/shop-now">Security & Protection</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Gaming Laptop</Link>
+                                <Link href="/shop-now">Gaming Laptop</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Accessories</Link>
+                                <Link href="/shop-now">Accessories</Link>
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-baby-bottle"></i>Babies & Moms
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-baseball"></i>Sport & Outdoor
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-smartphone"></i>Phones &
                           Accessories
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-book2"></i>Books & Office
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-car-siren"></i>Cars & Motocycles
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-wrench"></i>Home Improvements
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-tag"></i>Vouchers & Services
                         </Link>
                       </li>
@@ -686,7 +686,7 @@ const BlueHeader: React.FC = () => {
             </div>
 
             <div className="header__center new-search-bar">
-              <form className="ps-form--quick-search" method="get">
+              {/* <form className="ps-form--quick-search" method="get">
                 <div className="form-group--nest new-form-group--nest">
                   <input
                     className="form-control"
@@ -697,7 +697,7 @@ const BlueHeader: React.FC = () => {
                     <i className="icon-magnifier"></i>
                   </button>
                 </div>
-              </form>
+              </form> */}
             </div>
 
             <div className="header__right">
@@ -734,8 +734,8 @@ const BlueHeader: React.FC = () => {
                     <i className="icon-user"></i>
                   </div>
                   <div className="ps-block__right new-ps-block__right">
-                    <Link href="/login">Login</Link>
-                    <Link href="/register">Register</Link>
+                    {/* <Link href="/login">Login</Link>
+                    <Link href="/register">Register</Link> */}
                   </div>
                 </div>
               </div>
@@ -757,12 +757,12 @@ const BlueHeader: React.FC = () => {
                   <div className="menu__content">
                     <ul className="menu--dropdown">
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-star"></i>Hot Promotions
                         </Link>
                       </li>
                       <li className="menu-item-has-children has-mega-menu">
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-laundry"></i>Consumer Electronic
                         </Link>
                         <div className="mega-menu">
@@ -770,32 +770,32 @@ const BlueHeader: React.FC = () => {
                             <h4>Electronic</h4>
                             <ul className="mega-menu__list">
                               <li>
-                                <Link href="/shop">Home Audio & Theathers</Link>
+                                <Link href="/shop-now">Home Audio & Theathers</Link>
                               </li>
                               <li>
-                                <Link href="/shop">TV & Videos</Link>
+                                <Link href="/shop-now">TV & Videos</Link>
                               </li>
                               <li>
-                                <Link href="/shop">
+                                <Link href="/shop-now">
                                   Camera, Photos & Videos
                                 </Link>
                               </li>
                               <li>
-                                <Link href="/shop">
+                                <Link href="/shop-now">
                                   Cellphones & Accessories
                                 </Link>
                               </li>
                               <li>
-                                <Link href="/shop">Headphones</Link>
+                                <Link href="/shop-now">Headphones</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Videosgames</Link>
+                                <Link href="/shop-now">Videosgames</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Wireless Speakers</Link>
+                                <Link href="/shop-now">Wireless Speakers</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Office Electronic</Link>
+                                <Link href="/shop-now">Office Electronic</Link>
                               </li>
                             </ul>
                           </div>
@@ -803,41 +803,41 @@ const BlueHeader: React.FC = () => {
                             <h4>Accessories & Parts</h4>
                             <ul className="mega-menu__list">
                               <li>
-                                <Link href="/shop">Digital Cables</Link>
+                                <Link href="/shop-now">Digital Cables</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Audio & Video Cables</Link>
+                                <Link href="/shop-now">Audio & Video Cables</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Batteries</Link>
+                                <Link href="/shop-now">Batteries</Link>
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-shirt"></i>Clothing & Apparel
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-lampshade"></i>Home, Garden &
                           Kitchen
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-heart-pulse"></i>Health & Beauty
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-diamond2"></i>Yewelry & Watches
                         </Link>
                       </li>
                       <li className="menu-item-has-children has-mega-menu">
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-desktop"></i>Computer & Technology
                         </Link>
                         <div className="mega-menu">
@@ -845,69 +845,69 @@ const BlueHeader: React.FC = () => {
                             <h4>Computer & Technologies</h4>
                             <ul className="mega-menu__list">
                               <li>
-                                <Link href="/shop">Computer & Tablets</Link>
+                                <Link href="/shop-now">Computer & Tablets</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Laptop</Link>
+                                <Link href="/shop-now">Laptop</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Monitors</Link>
+                                <Link href="/shop-now">Monitors</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Networking</Link>
+                                <Link href="/shop-now">Networking</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Drive & Storages</Link>
+                                <Link href="/shop-now">Drive & Storages</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Computer Components</Link>
+                                <Link href="/shop-now">Computer Components</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Security & Protection</Link>
+                                <Link href="/shop-now">Security & Protection</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Gaming Laptop</Link>
+                                <Link href="/shop-now">Gaming Laptop</Link>
                               </li>
                               <li>
-                                <Link href="/shop">Accessories</Link>
+                                <Link href="/shop-now">Accessories</Link>
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-baby-bottle"></i>Babies & Moms
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-baseball"></i>Sport & Outdoor
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-smartphone"></i>Phones &
                           Accessories
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-book2"></i>Books & Office
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-car-siren"></i>Cars & Motocycles
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-wrench"></i>Home Improvements
                         </Link>
                       </li>
                       <li>
-                        <Link href="/shop">
+                        <Link href="/shop-now">
                           <i className="icon-tag"></i>Vouchers & Services
                         </Link>
                       </li>
@@ -957,13 +957,13 @@ const BlueHeader: React.FC = () => {
                   </ul>
                 </li>
                 <li className="menu-item-has-children has-mega-menu">
-                  <Link href="/shop">Shop</Link>
+                  <Link href="/shop-now">Shop</Link>
                   <div className="mega-menu">
                     <div className="mega-menu__column">
                       <h4>Catalog Pages</h4>
                       <ul className="mega-menu__list">
                         <li>
-                          <Link href="/shop">Shop Default</Link>
+                          <Link href="/shop-now">Shop Default</Link>
                         </li>
                         <li>
                           <Link href="/shop/shop-fullwidth">

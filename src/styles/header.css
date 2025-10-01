@@ -162,3 +162,60 @@ a {
   font-size: 25px !important;
   line-height: 35px !important;
 }
+
+
+/* /////////////////////////////////mobile view */
+
+/* -------- Mobile view (max-width: 768px) -------- */
+@media (max-width: 768px) {
+  .header__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .header__actions {
+    /* flex-direction: row; */
+    font-size: 8px !important; 
+    gap: 5px;
+  }
+
+  .header__extra i {
+    font-size: 8px !important; /* icons thoda bada ho jaye mobile pe */
+  }
+
+ 
+  .header .header__extra > i {
+  font-size: 14px !important;
+  line-height: 15px !important;
+}
+
+.header .header__extra span {
+    vertical-align: top;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+    bottom: 7px;
+    right: 5px;
+}
+}
+
+/* -------- Very small devices (max-width: 480px) -------- */
+@media (max-width: 480px) {
+  .header__actions {
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .header__extra span {
+    display: none; /* sirf icon dikhaye, numbers/labels hide ho jaye */
+  }
+}
