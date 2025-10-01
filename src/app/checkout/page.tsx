@@ -201,7 +201,7 @@ function page() {
                         </div>
                       </div>
                       <div className="ps-form__submit">
-                        <Link href="cart.html" className="fs-14">
+                        <Link href="/cart" className="fs-14">
                           <i className="icon-arrow-left mr-2" /> Return to
                           shopping cart
                         </Link>

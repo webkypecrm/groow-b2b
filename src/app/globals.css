@@ -29307,6 +29307,14 @@ textarea.form-control {
   .ps-section--shopping {
     padding: 50px 0;
   }
+  .ps-product-list .ps-section__links {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.ps-product-list .ps-section__content {
+  padding-top: 0px;
+}
 }
 
 .ps-newsletter {
@@ -29865,6 +29873,12 @@ textarea.form-control {
   margin-left: 10px;
   color: #666;
 }
+
+.ps-product-list .ps-section__content {
+  padding-top: 0px;
+}
+
+
 
 @media (max-width: 479px) {
   .ps-search-trending .ps-section__header h3 {
@@ -39111,4 +39125,49 @@ a {
 }
 .ps-form--search-mobile input {
   border: 1px solid #ddd;
+}
+
+
+@media(max-width:576px){
+  .header .header__actions > *{
+    margin: 0px 2px !important;
+  }
+  .new-search-bar{
+    display: inline;
+  }
+  .header .header__extra span{
+    bottom: 16px !important;
+  }
+  .header .header__actions{
+    align-items: normal !important;
+  }
+  .ps-block--user-header .ps-block__left i
+  {
+    font-size: 20px !important;
+    line-height: 17px !important;
+  }
+  .ps-block--user-header{
+    flex-direction: column;
+  }
+  .header__right{
+    margin-top: 17px !important;
+  }
+  .ps-search--mobile{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #homepage-1{
+    overflow-x: hidden !important;
+  }
+  header{
+    overflow-x:hidden !important;
+  }
+  .ps-block--site-features .ps-block__right h4{
+    font-size: 15px !important;
+  } 
+
+      .ps-block--site-features .ps-block__right p{
+        font-size: 12px !important;
+        /* padding: 20px !important; */
+      }
 }
