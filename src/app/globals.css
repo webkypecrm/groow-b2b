@@ -39101,7 +39101,8 @@ a {
   overflow-y: auto; /* allow scrolling */
 }
 .offcanvas-header {
-  background-color: #fbb800;
+  /* background-color: #fbb800; */
+  background-color: #fcb800;;
 }
 .submenu {
   display: none;
@@ -39170,4 +39171,17 @@ a {
         font-size: 12px !important;
         /* padding: 20px !important; */
       }
+
+      .menu-link {
+    cursor: pointer;
+    justify-content: start !important;
+    /* align-items: center !important; */
+    padding: 12px 16px;
+    display: flex;
+}
+
+.header.header--sticky .menu--product-categories .menu__toggle i {
+    font-size: 42px;
+    margin-top: 8px;
+}
 }
