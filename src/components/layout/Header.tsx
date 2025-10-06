@@ -1319,8 +1319,9 @@ const Header: React.FC = () => {
   const [isStickyHeaderVisible, setIsStickyHeaderVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDepartmentMenuOpen, setIsDepartmentMenuOpen] = useState(false);
-  const [isDepartmentMenuOpenSticky, setIsDepartmentMenuOpenSticky] =
-    useState(false);
+  const [isDepartmentMenuOpenSticky, setIsDepartmentMenuOpenSticky] = useState(false);
+
+    
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1343,8 +1344,22 @@ const Header: React.FC = () => {
     setIsDepartmentMenuOpen(!isDepartmentMenuOpen);
   };
 
+  // const toggleDepartmentMenuSticky = () => {
+  //   setIsDepartmentMenuOpenSticky(!isDepartmentMenuOpenSticky);
+  // };
+
+
+    const [isOpen, setIsOpen] = useState(false);
+
   const toggleDepartmentMenuSticky = () => {
     setIsDepartmentMenuOpenSticky(!isDepartmentMenuOpenSticky);
+    setIsOpen(!isOpen);
+  };
+
+   const [openMenu, setOpenMenu] = useState<string | null>(null);
+
+  const toggleSubmenu = (menu: string) => {
+    setOpenMenu(openMenu === menu ? null : menu);
   };
 
   return (
@@ -1819,13 +1834,23 @@ const Header: React.FC = () => {
         <div className="header__top new-headre-top-srticy">
           <div className="ps-container">
             <div className="header__left">
-              <Link className="ps-logo" href="/">
-                <img src="/static/img/logo_light.png" alt="" />
+              {/* <Link className="ps-logo" href="/">
+                <img src="/static/img/logo_light.png" alt="" style={{backgroundColor:"chocolate"}} />
+              </Link> */}
+
+               <Link className="ps-logo" href="/">
+                <img
+                  src="/images/image__8_-removebg-preview.png"
+                  alt=""
+                  style={{ maxWidth: "45%" }}
+                />
               </Link>
-              <div className="menu--product-categories">
+              {/* <div className="menu--product-categories">
                 <div
+                data-bs-toggle="offcanvas" 
                   className="menu__toggle"
                   onClick={toggleDepartmentMenuSticky}
+                   aria-controls="offcanvas-start"
                 >
                   <i className="icon-menu"></i>
                   <span className="d-sm-block d-none">Shop by Department</span>
@@ -1991,7 +2016,341 @@ const Header: React.FC = () => {
                     </ul>
                   </div>
                 )}
-              </div>
+              </div> */}
+
+           <div className="menu--product-categories">
+      {/* ==== MOBILE VIEW MENU (OFFCANVAS) ==== */}
+      <div className="d-lg-none">
+        {/* Trigger Button */}
+        <div
+          className="menu__toggle"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-controls="offcanvasRight"
+          aria-expanded={isOpen ? "true" : "false"}
+        >
+          <i className="icon-menu"></i>
+          {/* <span>Shop by Department</span> */}
+        </div>
+
+        {/* Offcanvas Menu */}
+        <div
+          className={`offcanvas offcanvas-start ${isOpen ? "show" : ""}`}
+          tabIndex="-1"
+          id="offcanvasRight"
+          style={{ visibility: isOpen ? "visible" : "hidden" }}
+        >
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title">Shop by Department</h5>
+            <button
+              type="button"
+              className="btn-close text-reset"
+              aria-label="Close"
+              onClick={() => setIsOpen(false)}
+            ></button>
+          </div>
+
+          {/* Offcanvas body */}
+          <div className="offcanvas-body">
+            <ul className="new-menu-dropdown">
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-star"></i> Hot Promotions
+                </Link>
+              </li>
+
+              {/* Example Submenu */}
+              <li>
+                <div
+                  className="menu-item-has-children has-mega-menu menu-link new-menu-link d-flex justify-content-between align-items-center"
+                  onClick={() => toggleSubmenu("consumer")}
+                  style={{ cursor: "pointer" }}
+                >
+                  <span>
+                    <i className="icon-laundry"></i> Consumer Electronic
+                  </span>
+                  <i
+                    className={`fas fa-chevron-down rotate-icon ${
+                      openMenu === "consumer" ? "open" : ""
+                    }`}
+                  />
+                </div>
+
+                {openMenu === "consumer" && (
+                  <div className="mega-menu show">
+                    <div className="mega-menu__column">
+                      <h4>Electronic</h4>
+                      <ul className="mega-menu__list">
+                        <li>
+                          <Link href="/shop-now">Home Audio & Theathers</Link>
+                        </li>
+                        <li>
+                          <Link href="/shop-now">TV & Videos</Link>
+                        </li>
+                        <li>
+                          <Link href="/shop-now">
+                            Camera, Photos & Videos
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/shop-now">
+                            Cellphones & Accessories
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/shop-now">Headphones</Link>
+                        </li>
+                        <li>
+                          <Link href="/shop-now">Video Games</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </li>
+
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-shirt"></i> Clothing & Apparel
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-lampshade"></i> Home, Garden & Kitchen
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-heart-pulse"></i> Health & Beauty
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-diamond2"></i> Jewelry & Watches
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-baby-bottle"></i> Babies & Moms
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-baseball"></i> Sport & Outdoor
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-smartphone"></i> Phones & Accessories
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-book2"></i> Books & Office
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-car-siren"></i> Cars & Motorcycles
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-wrench"></i> Home Improvements
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now" className="menu-link new-menu-link">
+                  <i className="icon-tag"></i> Vouchers & Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* ==== DESKTOP VIEW MENU (MEGA DROPDOWN) ==== */}
+      <div className="d-none d-lg-block">
+        <div
+          className="menu__toggle"
+          onClick={() =>
+            setIsDepartmentMenuOpenSticky(!isDepartmentMenuOpenSticky)
+          }
+        >
+          <i className="icon-menu"></i>
+          <span>Shop by Department</span>
+        </div>
+
+        {isDepartmentMenuOpenSticky && (
+          <div className="menu__content">
+            <ul className="menu--dropdown new-menu-dropdown">
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-star"></i> Hot Promotions
+                </Link>
+              </li>
+              <li className="menu-item-has-children has-mega-menu">
+                <Link href="/shop-now">
+                  <i className="icon-laundry"></i> Consumer Electronic
+                </Link>
+               <div className="mega-menu">
+                          <div className="mega-menu__column">
+                            <h4>Electronic</h4>
+                            <ul className="mega-menu__list">
+                              <li>
+                                <Link href="/shop-now">Home Audio & Theathers</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">TV & Videos</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">
+                                  Camera, Photos & Videos
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">
+                                  Cellphones & Accessories
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Headphones</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Videosgames</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Wireless Speakers</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Office Electronic</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="mega-menu__column">
+                            <h4>Accessories & Parts</h4>
+                            <ul className="mega-menu__list">
+                              <li>
+                                <Link href="/shop-now">Digital Cables</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Audio & Video Cables</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Batteries</Link>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-shirt"></i> Clothing & Apparel
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-lampshade"></i> Home, Garden & Kitchen
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-heart-pulse"></i> Health & Beauty
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-diamond2"></i> Jewelry & Watches
+                </Link>
+              </li>
+               <li className="menu-item-has-children has-mega-menu">
+                        <Link href="/shop-now">
+                          <i className="icon-desktop"></i>Computer & Technology
+                        </Link>
+                        <div className="mega-menu">
+                          <div className="mega-menu__column">
+                            <h4>Computer & Technologies</h4>
+                            <ul className="mega-menu__list">
+                              <li>
+                                <Link href="/shop-now">Computer & Tablets</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Laptop</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Monitors</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Networking</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Drive & Storages</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Computer Components</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Security & Protection</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Gaming Laptop</Link>
+                              </li>
+                              <li>
+                                <Link href="/shop-now">Accessories</Link>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-baby-bottle"></i> Babies & Moms
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-baseball"></i> Sport & Outdoor
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-smartphone"></i> Phones & Accessories
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-book2"></i> Books & Office
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-car-siren"></i> Cars & Motorcycles
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-wrench"></i> Home Improvements
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop-now">
+                  <i className="icon-tag"></i> Vouchers & Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+
+
+    <Link className="ps-logo text-start d-flex d-block d-lg-none" href="/">
+  <img 
+    src="/images/image.png" 
+    alt="" 
+    style={{ maxWidth: "60%", paddingTop: "8px" , paddingLeft:"4px" }} 
+  />
+</Link>
+
             </div>
 
             <div className="header__center new-search-bar d-sm-block d-none">
@@ -2009,12 +2368,16 @@ const Header: React.FC = () => {
               </form>
             </div>
 
+            
+
             <div className="header__right">
               <div className="header__actions new-header__actions-2">
                 {/* <Link className="header__extra d-sm-none d-block" href="/compare">
                   <i className="fa-solid fa-magnifying-glass compare-icon"></i>
 
                 </Link> */}
+
+                
                 <Link className="header__extra" href="/compare">
                   <i className="fa-solid fa-chart-bar compare-icon"></i>
                   <span>
