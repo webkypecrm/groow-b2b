@@ -714,7 +714,7 @@ const BlueHeader: React.FC = () => {
         {/* Offcanvas Menu */}
         <div
           className={`offcanvas offcanvas-start ${isOpen ? "show" : ""}`}
-          tabIndex="-1"
+          tabIndex={-1}
           id="offcanvasRight"
           style={{ visibility: isOpen ? "visible" : "hidden" }}
         >
