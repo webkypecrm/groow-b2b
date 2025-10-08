@@ -137,7 +137,7 @@ interface FormData {
   confirmPassword: string;
 }
 
-export default function RegisterPage() {
+export default function Page() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
