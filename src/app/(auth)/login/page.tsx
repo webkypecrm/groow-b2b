@@ -10,7 +10,7 @@
 
 import { useState } from "react";
 
-export default function LoginPage() {
+export default function page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
