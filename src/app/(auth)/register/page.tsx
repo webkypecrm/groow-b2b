@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function RegisterPage() {
+export default function page() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
