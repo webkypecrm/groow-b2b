@@ -25,7 +25,7 @@ export default function LoginPage() {
     className="card shadow-lg p-5"
     style={{ width: "480px", borderRadius: "20px" }} // card thoda bada + round
   >
-    <h3 className="text-center mb-4">Welcome Back 👋</h3>
+    <h3 className="text-center mb-4">GROOW</h3>
     <form onSubmit={handleSubmit}>
       {/* Email */}
       <div className="mb-3">
@@ -84,25 +84,24 @@ export default function LoginPage() {
       {/* Buttons */}
       <button
         type="submit"
-        className="btn btn-success w-100"
-        style={{ padding: "10px", fontSize: "16px",  borderRadius: "12px", // rounder
-            height: "38px",  }} // wider button
+        className="btn btn-success w-100 "
+        style={{ padding: "10px", fontSize: "16px",  borderRadius: "12px", 
+            height: "40px", paddingBottom:"4px", marginBottom:"4px"  }} // wider button
       >
         Login
       </button>
-      <button
+      {/* <button
         type="button"
         className="btn btn-outline-secondary w-100 mt-2"
-        style={{ padding: "10px", fontSize: "16px",  borderRadius: "12px", // rounder
-            height: "38px",  }} // wider button
+        style={{ padding: "10px", fontSize: "16px",  borderRadius: "12px",  height: "44px",  paddingBottom:"12px", marginBottom:"14px"    }} // wider button
       >
         Cancel
-      </button>
+      </button>  */}
     </form>
 
     {/* Signup Option */}
-    <p className="text-center mt-3 mb-0">
-      Don’t have an account? <a href="/auth/register">Sign Up</a>
+    <p className="text-center  mb-0">
+      Don’t have an account? <a href="/register">Sign Up</a>
     </p>
   </div>
 </div>

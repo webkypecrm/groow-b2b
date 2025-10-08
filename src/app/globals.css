@@ -19590,8 +19590,8 @@ button.ps-btn:hover.ps-btn--black {
 
 .form-control {
   outline: none;
-  font-size: 14px;
-  padding: 0 20px;
+  font-size: 12px;
+  padding: 0 18px;
   height: 50px;
   background-color: transparent;
   border: 1px solid #ddd;

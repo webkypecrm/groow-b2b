@@ -25,44 +25,34 @@ export default function RegisterPage() {
         style={{ width: "430px", borderRadius: "16px" }}
       >
         {/* Heading */}
-        <h3 className="text-center fw-bold mb-2 text-success">GROOW </h3>
+        <h3 className="text-center fw-bold mb-2 ">GROOW </h3>
         <p className="text-center text-muted mb-4">
           {/* Join us and explore the platform 🚀 */} 
         </p>
 
         <form onSubmit={handleSubmit}>
           {/* Name */}
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label fw-semibold">
-              Full Name
-            </label>
-            <input
-              type="text"
-              className="form-control form-control-sm rounded-3"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
+ 
 
           {/* Email */}
           <div className="mb-3">
             <label htmlFor="email" className="form-label fw-semibold">
               Email Address
             </label>
-            <input
-              type="email"
-              className="form-control form-control-sm rounded-3"
-              id="email"
-              name="email"
-              value={formData.email}
+       
+             <input
+          type="email"
+          id="email"
+          className="form-control"
+          style={{
+            borderRadius: "12px", 
+            height: "38px", 
+          }}
+          placeholder="Enter your email"
+         value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your email"
-              required
-            />
+          required
+        />
           </div>
 
           {/* Password */}
@@ -70,16 +60,20 @@ export default function RegisterPage() {
             <label htmlFor="password" className="form-label fw-semibold">
               Password
             </label>
-            <input
-              type="password"
-              className="form-control form-control-sm rounded-3"
-              id="password"
-              name="password"
-              value={formData.password}
+        
+             <input
+          type="password"
+          id="password"
+          className="form-control"
+          style={{
+            borderRadius: "12px", 
+            height: "38px", 
+          }}
+          placeholder="Enter your password"
+          value={formData.password}
               onChange={handleChange}
-              placeholder="Enter password"
-              required
-            />
+          required
+        />
           </div>
 
           {/* Confirm Password */}
@@ -89,9 +83,14 @@ export default function RegisterPage() {
             </label>
             <input
               type="password"
-              className="form-control form-control-sm rounded-3"
+              className="form-control  "
               id="confirmPassword"
               name="confirmPassword"
+                 style={{
+            borderRadius: "12px", 
+            height: "38px", 
+            marginBottom: "16px",
+          }}
               value={formData.confirmPassword}
               onChange={handleChange}
               placeholder="Re-enter password"
@@ -100,17 +99,19 @@ export default function RegisterPage() {
           </div>
 
           {/* Register Button */}
-          <button
-            type="submit"
-            className="btn btn-success w-100 py-2 fw-bold rounded-3"
-            style={{ letterSpacing: "0.5px" }}
-          >
-            Register
-          </button>
+      
+               <button
+        type="submit"
+        className="btn btn-success w-100 py-2  "
+        style={{ padding: "10px", fontSize: "16px",  borderRadius: "12px", 
+            height: "38px", marginBottom:"4px"  }} // wider button
+      >
+         Register
+      </button>
         </form>
 
         {/* Login Link */}
-        <p className="text-center mt-4 mb-0 text-muted">
+        <p className="text-center mt-2 mb-0 text-muted">
           Already have an account?{" "}
           <a
             href="/login"
